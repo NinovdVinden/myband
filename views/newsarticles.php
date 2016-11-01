@@ -3,12 +3,19 @@
 echo '<section>';
 
 //fetch_assoc should not be in the view!
-while ($newsItem = $result->fetch_assoc()) {
-	
-	echo '<article>';
-	echo '<h1>'.$newsItem['title'].'</h1>';
-	echo '<content>'.$newsItem['content'].'</content>';
-	echo '</article>';
+foreach ($result as $newsItem=> $oneItem) {
+
+
+ echo '<article>';
+ echo '<h1>'.$oneItem['title'].'</h1>';
+  echo '<img src="images/'.$oneItem['image'].'">';
+echo '<br>';
+echo '<br>';
+ echo '<content>'.$oneItem['content'].'</content>';
+echo '<p>'.$oneItem['date_created'].'</p>';
+ echo '</article>';
 }
+
+
 
 echo '</section>';

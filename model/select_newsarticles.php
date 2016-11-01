@@ -1,6 +1,6 @@
 <?php
+$start_item = (($page_nr-1) * ITEMS_PER_PAGE);
 
-$result = $mysqli->query("SELECT * FROM newsarticles");
-
-convertResultToArray($result);
-print_r($result);
+$sql = "SELECT * FROM newsarticles LIMIT " . $start_item . ", " . ITEMS_PER_PAGE;
+$result = $mysqli->query($sql);
+$result = convertResultToArray($result);

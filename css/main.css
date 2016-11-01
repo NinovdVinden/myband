@@ -2,19 +2,186 @@
  * Dit is de custom style sheet van jouw website
  *
  */
-
+ @font-face {
+     font-family: webFont;
+     src: url(carbon.ttf);
+ }
 body {
-	
+margin: 0;
+padding: 0;
+padding-top: 280px;
+background-color: #312222;
+}
+
+nav{
+
+  box-shadow: 5px 5px 10px #393131;
+}
+a{
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+}
+nav ul li a{
+  text-decoration: none;
+  list-style-type: none;
+  color: inherit;
+  display: block;
+  padding: 20px;
+  font-family: webFont;
+  font-size: 24px;
+}
+nav ul{
+  background-color: black;
+  overflow: hidden;
+  color: #FFFFFF;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
 
 }
 
-.desc {
+nav ul li{
+  display: inline-block;
+}
 
+nav ul li:hover{
+  background-color: #393131;
+}
+.handle{
+  width: 100%;
+  height: 55px;
+  background: black;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: white;
+  display: none;
+  font-family: webFont;
+}
+@media screen and (max-width: 650px){
+  nav ul{
+    max-height: 0;
+  }
+  .showing{
+    max-height: 20em;
+  }
+  nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #333;
+  }
+  nav ul li:hover{
+    background-color: black;
+  }
+  nav ul li a{
+    text-align: left;
+    font-size: 20px;
+  }
+  .handle{
+    display: block;
+  }
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.bannerimg{
+  height: 180px;
+}
+  .bannerimg img{
+    height: 180px;
+  }
+
+.edtour{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+#edtourdates{
+  width: 800px;
+  margin: 0 auto;
+}
+
+#tourdiv{
+  width: 800px;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4E4545;
+}
+
+#edtouraudio{
+  width: 800px;
+  margin: 0 auto;
+}
+#audiodiv{
+  width: 800px;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4E4545;
+}
+#niks{
+padding: 0;
+margin: 0;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: webFont;
+}
+th {
+    background-color: #333;
+    color: white;
+}
+#news{
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+article{
+  margin-left: auto;
+  margin-right: auto;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: darkgrey}
+
+/* Change the link color to #111 (black) on hover */
+
+
+
+
+.desc {
 	background-color: #fff;
 	border: 1px solid #000;
 	position: absolute;
 	margin-left: 100px;
 	margin-top: -20px;
 	width: 200px;
-		
+}
+
+footer{
+	background-color: black;
 }
