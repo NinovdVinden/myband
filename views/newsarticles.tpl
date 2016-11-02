@@ -1,3 +1,7 @@
+<div id="newsdiv">
+  <div class="edtour">
+    <img src="ednews.png" alt="" id="ednews" />
+  </div>
 <div class="pagination">
   <ul>
     <li><a href="?action=home&pagenr=2">2</a></li>
@@ -17,3 +21,4 @@
   </article>
   {/foreach}
 </section>
+</div>

@@ -3,7 +3,7 @@
     <img src="EdSheeran-slider.png" alt="" id="edtourdates" />
   </div>
 
-  <section>
+
   <br>
     <table>
     <tr>
@@ -21,5 +21,5 @@
   </table>
 
 
-  </section>
+
 </div>

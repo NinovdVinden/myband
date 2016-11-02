@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-27 10:45:54
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-02 11:21:39
          compiled from "views\newsarticles.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:406457fb6b5998d675-74452463%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd2104d91d134b1ddf013f0f614b9454791a8acef' => 
     array (
       0 => 'views\\newsarticles.tpl',
-      1 => 1477557930,
+      1 => 1478082031,
       2 => 'file',
     ),
   ),
@@ -24,7 +24,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_57fb6b59a5bd49_65927202')) {function content_57fb6b59a5bd49_65927202($_smarty_tpl) {?><div class="pagination">
+<?php if ($_valid && !is_callable('content_57fb6b59a5bd49_65927202')) {function content_57fb6b59a5bd49_65927202($_smarty_tpl) {?><div id="newsdiv">
+  <div class="edtour">
+    <img src="ednews.png" alt="" id="ednews" />
+  </div>
+<div class="pagination">
   <ul>
     <li><a href="?action=home&pagenr=2">2</a></li>
     <li><a href="?action=home&pagenr=1">1</a></li>
@@ -51,4 +55,5 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
   </article>
   <?php } ?>
 </section>
+</div>
 <?php }} ?>

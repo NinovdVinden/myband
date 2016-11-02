@@ -13,13 +13,14 @@ switch (PROJECT_STATUS) {
 	{
 		ini_set('display_errors','1');
 		ini_set('error_reporting', E_ALL);
+		ini_set('data.timezone','Europe/Amsterdam');
 	}
 }
 
 
 // Initialise template parser
 $templateParser = new Smarty();
-$templateParser->template_dir = "views"; 
+$templateParser->template_dir = "views";
 $templateParser->compile_dir = "views/compiled"; //Place for compiled templates
 //$templateParser->cache_dir = "views/cache";
 

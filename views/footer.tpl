@@ -1,6 +1,12 @@
+<br>
 <footer>
-<p>
+<br>
   {$footerString}
-</p></footer>
+  <br>
+  <br>
+  <script src="js/search.js"></script>
+</footer>
+
 </body>
+
 </html>

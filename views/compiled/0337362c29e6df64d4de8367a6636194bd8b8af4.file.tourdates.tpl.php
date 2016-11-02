@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-31 11:46:59
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-01 16:11:13
          compiled from "views\tourdates.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19182580de4cb8caa59-83316608%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0337362c29e6df64d4de8367a6636194bd8b8af4' => 
     array (
       0 => 'views\\tourdates.tpl',
-      1 => 1477910605,
+      1 => 1478013071,
       2 => 'file',
     ),
   ),
@@ -29,7 +29,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <img src="EdSheeran-slider.png" alt="" id="edtourdates" />
   </div>
 
-  <section>
+
   <br>
     <table>
     <tr>
@@ -54,6 +54,6 @@ $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
   </table>
 
 
-  </section>
+
 </div>
 <?php }} ?>

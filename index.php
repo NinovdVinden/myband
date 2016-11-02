@@ -12,7 +12,7 @@ include 'includes/database.php';
 include 'includes/fncts.php';
 
 // Assign value of page title to the smarty variable 'title', usually the value comes from a database
-$templateParser->assign('title', 'Me First And The Gimme Gimmes');
+$templateParser->assign('title', 'MyBand - Ed Sheeran');
 
 // Display template: output html
 $templateParser->display('head.tpl');
@@ -31,10 +31,8 @@ switch($action){
   $templateParser->display('newsarticles.tpl');
   break;
 
-  case 'about':
-  include('model/select_about.php');
-$templateParser->assign('result', $result);
- $templateParser->display('about.tpl');
+  case 'search':
+ $templateParser->display('search.tpl');
   break;
 
   case 'tourdates':
@@ -55,6 +53,6 @@ $templateParser->assign('result', $result);
 // Show newsarticles 'old style' => refactor to template system.
 //include('views/newsarticles.php');
 
-$footerText = 'Made by me for school';
+$footerText = 'Nino van der Vinden - Schoolproject';
 $templateParser->assign('footerString',$footerText);
 $templateParser->display('footer.tpl');

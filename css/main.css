@@ -13,9 +13,31 @@ padding-top: 280px;
 background-color: #312222;
 }
 
+.pagination ul li a{
+  display: block;
+  padding: 10px;
+  color: inherit;
+  font-family: webFont;
+  font-size: 20px;
+
+}
+
+.pagination ul{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+.pagination nav ul li{
+  display: inline-block;
+
+}
 nav{
 
-  box-shadow: 5px 5px 10px #393131;
+  box-shadow: 5px 5px 10px #171717;;
 }
 a{
   text-decoration: none;
@@ -51,7 +73,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-  background-color: #393131;
+  background-color: #171717;;
 }
 .handle{
   width: 100%;
@@ -65,30 +87,14 @@ nav ul li:hover{
   display: none;
   font-family: webFont;
 }
-@media screen and (max-width: 650px){
-  nav ul{
-    max-height: 0;
-  }
-  .showing{
-    max-height: 20em;
-  }
-  nav ul li{
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #333;
-  }
-  nav ul li:hover{
-    background-color: black;
-  }
-  nav ul li a{
-    text-align: left;
-    font-size: 20px;
-  }
-  .handle{
-    display: block;
-  }
+#edxlogo{
+  width: 30px;
 }
 
+#hamburgericon{
+  width: 25px;
+  float: right;
+}
 .sticky {
     position: fixed;
     width: 100%;
@@ -105,11 +111,13 @@ nav ul li:hover{
     height: 180px;
   }
 
-.edtour{
-  margin-left: auto;
-  margin-right: auto;
-
+  input[type=text] {
+    padding: 12px 20px;
+    width: 200px;
+    box-sizing: border-box;
 }
+
+
 #edtourdates{
   width: 800px;
   margin: 0 auto;
@@ -122,7 +130,34 @@ nav ul li:hover{
   margin-right: auto;
   background-color: #4E4545;
 }
+#searchdiv{
+  width: 800px;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4E4545;
+}
+#searchdiv2{
+  width: 200px;
+  margin: 0 auto;
+}
+#newsdiv{
+  width: 800px;
+  border-radius: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4E4545;
+  font-family: webFont;
+}
 
+#ednews{
+  width: 800px;
+  margin: 0 auto;
+}
+audio
+{
+width: 100%;
+}
 #edtouraudio{
   width: 800px;
   margin: 0 auto;
@@ -168,11 +203,6 @@ th, td {
 
 tr:nth-child(even){background-color: darkgrey}
 
-/* Change the link color to #111 (black) on hover */
-
-
-
-
 .desc {
 	background-color: #fff;
 	border: 1px solid #000;
@@ -182,6 +212,94 @@ tr:nth-child(even){background-color: darkgrey}
 	width: 200px;
 }
 
-footer{
-	background-color: black;
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: webFont;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+@media screen and (max-width: 800px){
+
+  #edtourdates{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #tourdiv{
+    width: 100%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4E4545;
+  }
+
+  #ednews{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #newsdiv{
+    width: 100%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4E4545;
+  }
+
+  #edtouraudio{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #audiodiv{
+    width: 100%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4E4545;
+  }
+  table {
+      border-collapse: collapse;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: webFont;
+  }
+
+}
+@media screen and (max-width: 650px){
+  body{
+    padding-top: 90px;
+  }
+  nav ul{
+    max-height: 0;
+  }
+  .showing{
+    max-height: 20em;
+  }
+  nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #171717;
+  }
+  nav ul li:hover{
+    background-color: black;
+  }
+  nav ul li a{
+    text-align: left;
+    font-size: 15px;
+  }
+  .handle{
+    display: block;
+  }
+  .bannerimg{
+    display: none;
+  }
+    .bannerimg img{
+      display: none;
+    }
 }
