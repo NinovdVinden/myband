@@ -4,21 +4,35 @@
   </div>
 <div class="pagination">
   <ul>
-    <li><a href="?action=home&pagenr=2">2</a></li>
     <li><a href="?action=home&pagenr=1">1</a></li>
+    <li><a href="?action=home&pagenr=2">2</a></li>
+
 
   </ul>
 </div>
 
 
-<section id="news">
+
   {foreach from=$result item=oneItem}
-  <article><h1>{$oneItem.title}</h1>
-    <img src='{$oneItem.image}'>
+  <div id="newsdivje"><p id="newstitle">{$oneItem.title}</p>
+    <img src='{$oneItem.image}' id="newsimg">
     <br>
-    <content>{$oneItem.content}</content>
+    <p>
+      {$oneItem.content}
+    </p>
     <p>{$oneItem.date_created}</p>
-  </article>
+    <br>
+
+  </div>
   {/foreach}
-</section>
+  <div class="pagination">
+    <ul>
+      <li><a href="?action=home&pagenr=1">1</a></li>
+      <li><a href="?action=home&pagenr=2">2</a></li>
+
+
+    </ul>
+  </div>
+  <br>
+
 </div>

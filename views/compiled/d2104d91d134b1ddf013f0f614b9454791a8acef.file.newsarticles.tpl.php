@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-11-02 11:21:39
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 10:24:17
          compiled from "views\newsarticles.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:406457fb6b5998d675-74452463%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd2104d91d134b1ddf013f0f614b9454791a8acef' => 
     array (
       0 => 'views\\newsarticles.tpl',
-      1 => 1478082031,
+      1 => 1478165055,
       2 => 'file',
     ),
   ),
@@ -30,30 +30,44 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   </div>
 <div class="pagination">
   <ul>
-    <li><a href="?action=home&pagenr=2">2</a></li>
     <li><a href="?action=home&pagenr=1">1</a></li>
+    <li><a href="?action=home&pagenr=2">2</a></li>
+
 
   </ul>
 </div>
 
 
-<section id="news">
+
   <?php  $_smarty_tpl->tpl_vars['oneItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['oneItem']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['result']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['oneItem']->key => $_smarty_tpl->tpl_vars['oneItem']->value) {
 $_smarty_tpl->tpl_vars['oneItem']->_loop = true;
 ?>
-  <article><h1><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['title'];?>
-</h1>
+  <div id="newsdivje"><p id="newstitle"><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['title'];?>
+</p>
     <img src='<?php echo $_smarty_tpl->tpl_vars['oneItem']->value['image'];?>
-'>
+' id="newsimg">
     <br>
-    <content><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['content'];?>
-</content>
+    <p>
+      <?php echo $_smarty_tpl->tpl_vars['oneItem']->value['content'];?>
+
+    </p>
     <p><?php echo $_smarty_tpl->tpl_vars['oneItem']->value['date_created'];?>
 </p>
-  </article>
+    <br>
+
+  </div>
   <?php } ?>
-</section>
+  <div class="pagination">
+    <ul>
+      <li><a href="?action=home&pagenr=1">1</a></li>
+      <li><a href="?action=home&pagenr=2">2</a></li>
+
+
+    </ul>
+  </div>
+  <br>
+
 </div>
 <?php }} ?>

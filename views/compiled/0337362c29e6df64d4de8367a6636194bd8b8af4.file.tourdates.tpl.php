@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-11-01 16:11:13
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 12:01:27
          compiled from "views\tourdates.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19182580de4cb8caa59-83316608%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0337362c29e6df64d4de8367a6636194bd8b8af4' => 
     array (
       0 => 'views\\tourdates.tpl',
-      1 => 1478013071,
+      1 => 1478170767,
       2 => 'file',
     ),
   ),
@@ -34,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <table>
     <tr>
       <th>Date</th>
-      <th>City</th>
+      <th>Country</th>
       <th>Venue</th>
     </tr>
     <?php  $_smarty_tpl->tpl_vars['oneItem'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['oneItem']->_loop = false;

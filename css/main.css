@@ -14,26 +14,35 @@ background-color: #312222;
 }
 
 .pagination ul li a{
-  display: block;
-  padding: 10px;
-  color: inherit;
-  font-family: webFont;
-  font-size: 20px;
-
-}
-
-.pagination ul{
-  padding: 0;
-  margin: 0;
-  text-align: center;
   text-decoration: none;
   list-style-type: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  font-family: webFont;
+  font-size: 20px;
+}
+
+.pagination ul li a:hover{
+  color: green;
+}
+.pagination ul{
+
+  overflow: hidden;
+  color: #FFFFFF;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  -o-transition: max-height 0.4s;
+  transition: max-height 0.4s;
 
 }
 
-.pagination nav ul li{
+.pagination ul li{
   display: inline-block;
-
 }
 nav{
 
@@ -123,6 +132,11 @@ nav ul li:hover{
   margin: 0 auto;
 }
 
+#searchbanner{
+  width: 800px;
+  margin: 0 auto;
+}
+
 #tourdiv{
   width: 800px;
   border-radius: 3%;
@@ -150,10 +164,27 @@ nav ul li:hover{
   font-family: webFont;
 }
 
+#newsdivje{
+  width: 400px;
+  margin: 0 auto;
+}
+
+#newstitle{
+  font-size: 25px;
+}
+
 #ednews{
   width: 800px;
   margin: 0 auto;
 }
+
+#newsimg{
+  width: 400px;
+  margin: 0 auto;
+}
+
+
+
 audio
 {
 width: 100%;
@@ -217,6 +248,7 @@ footer {
   background-color: black;
   color: white;
   font-family: webFont;
+  font-size: 15px;
   right: 0;
   bottom: 0;
   left: 0;
@@ -225,7 +257,13 @@ footer {
 
 @media screen and (max-width: 800px){
 
+
   #edtourdates{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #searchbanner{
     width: 100%;
     margin: 0 auto;
   }
@@ -237,6 +275,15 @@ footer {
     margin-right: auto;
     background-color: #4E4545;
   }
+
+  #searchdiv{
+    width: 100%;
+    border-radius: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4E4545;
+  }
+
 
   #ednews{
     width: 100%;
@@ -251,6 +298,8 @@ footer {
     background-color: #4E4545;
   }
 
+
+
   #edtouraudio{
     width: 100%;
     margin: 0 auto;
@@ -262,6 +311,7 @@ footer {
     margin-right: auto;
     background-color: #4E4545;
   }
+
   table {
       border-collapse: collapse;
       width: 90%;
@@ -274,6 +324,26 @@ footer {
 @media screen and (max-width: 650px){
   body{
     padding-top: 90px;
+  }
+.pagination ul{
+  padding-left: 23px;
+  text-align: left;
+}
+
+.pagination ul li a{
+  font-size: 17px;
+}
+  #newstitle{
+    font-size: 18px;
+  }
+#newsimg{
+  width: 80%;
+  margin: 0 auto;
+}
+  #newsdivje{
+    width: 90%;
+
+    margin: 0 auto;
   }
   nav ul{
     max-height: 0;
@@ -302,4 +372,12 @@ footer {
     .bannerimg img{
       display: none;
     }
+    #audiotable{
+      width: 90%;
+    }
+
+    audio{
+      width: 70%;
+    }
+
 }

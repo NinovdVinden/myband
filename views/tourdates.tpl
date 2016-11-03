@@ -8,7 +8,7 @@
     <table>
     <tr>
       <th>Date</th>
-      <th>City</th>
+      <th>Country</th>
       <th>Venue</th>
     </tr>
     {foreach from=$result item=oneItem}

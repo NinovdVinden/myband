@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-28 16:15:49
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 11:56:44
          compiled from "views\audio.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2632258135540568d64-50897792%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'aa3c67a9b70dd374211bee8426e689e67d1355f3' => 
     array (
       0 => 'views\\audio.tpl',
-      1 => 1477664149,
+      1 => 1478170601,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <section>
 <br>
-  <table>
+  <table id="audiotable">
   <tr>
     <th>Name</th>
     <th>Listen</th>

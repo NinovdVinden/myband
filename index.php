@@ -53,6 +53,6 @@ switch($action){
 // Show newsarticles 'old style' => refactor to template system.
 //include('views/newsarticles.php');
 
-$footerText = 'Nino van der Vinden - Schoolproject';
+$footerText = 'Nino MD2A - Schoolproject';
 $templateParser->assign('footerString',$footerText);
 $templateParser->display('footer.tpl');
