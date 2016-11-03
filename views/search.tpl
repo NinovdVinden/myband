@@ -1,14 +1,12 @@
 <div id="searchdiv">
   <div class="edtour">
-    <img src="EdSheeran-slider.png" alt="" id="edtourdates" />
+    <img src="searchbanner.png" alt="" id="searchbanner" />
   </div>
 
 <div id="searchdiv2">
   <br>
-  <form>
-  <input type="text" name="users" placeholder="Search by city or country.." onkeyup="showUser(this.value)">
-    </select>
-  </form>
+  <input type="text" name="users" placeholder="Search by country.." onkeyup="showUser(this.value)">
+  <br>
   <br>
 </div>
 

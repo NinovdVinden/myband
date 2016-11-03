@@ -3,7 +3,7 @@
 $q = ($_GET['q']);
 
 
- $con = mysqli_connect('localhost','root','','myband');
+ $con = mysqli_connect('localhost','adminnino','kronos2411','myband_');
  if (!$con) {
      die('Could not connect: ' . mysqli_error($con));
  }
@@ -15,10 +15,9 @@ $q = ($_GET['q']);
  $result = mysqli_query($con,$sql);
 
  echo "<table>
- <tr>
- <th>Search for performances</th>
-
- ";
+ <tr><th>Date</th>
+ <th>Country</th>
+ <th>Venue</th>";
 
  while($row = mysqli_fetch_array($result)) {
      echo "<tr>";
@@ -32,3 +31,4 @@ $q = ($_GET['q']);
  echo "</table>";
  mysqli_close($con);
  ?>
+ 
